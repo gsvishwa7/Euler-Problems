@@ -7,9 +7,10 @@ def is_prime(val):
             return False
     return True
 
-while len(primes)<10001:
-    if is_prime(x):
-        primes.append(x)
-    x = x+2
+if __name__ == "__main__":
+    while len(primes)<10001:
+        if is_prime(x):
+            primes.append(x)
+        x = x+2
 
-print(primes[-1])
+    print(primes[-1])
